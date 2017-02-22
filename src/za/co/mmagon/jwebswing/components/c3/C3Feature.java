@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -43,7 +43,7 @@ public class C3Feature extends Feature<C3Options, C3Feature> implements C3Featur
      */
     public C3Feature(Component forComponent)
     {
-        super("Blank");
+        super("C3JSFeature");
         this.forComponent = forComponent;
         getJavascriptReferences().add(D3JavascriptReferencePool.D3DrawingLibrary.getReference());
         getJavascriptReferences().add(C3JavascriptReferencePool.C3GraphCore.getReference());
