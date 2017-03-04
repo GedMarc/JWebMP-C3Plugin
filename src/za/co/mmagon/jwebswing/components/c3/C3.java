@@ -1,4 +1,4 @@
-/*
+/* 
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,7 +18,6 @@ package za.co.mmagon.jwebswing.components.c3;
 
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
 
 /**
  * An implementation of the C3 Graphs project.
@@ -28,14 +27,7 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
  * @version 1.0
  */
 @ComponentInformation(name = "C3 Graphing", description = "C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more. ",
-        url = "https://www.c3js.org", wikiUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin/wiki")
-@PluginInformation(pluginName = "C3.js", pluginUniqueName = "c3-js", pluginDescription = "C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more.",
-        pluginVersion = "0.4.11",
-        pluginDependancyUniqueIDs = "d3-js", pluginCategories = "C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more.",
-        pluginSubtitle = "C3 enables deeper integration of charts into your application",
-        pluginGitUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin", pluginSourceUrl = "",
-        pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin/wiki",
-        pluginOriginalHomepage = "http://www.c3js.org/")
+                      url = "https://www.c3js.org", wikiUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin/wiki")
 public class C3 extends Div<C3Children, C3Attributes, C3Features, C3Events, C3>
 {
 
