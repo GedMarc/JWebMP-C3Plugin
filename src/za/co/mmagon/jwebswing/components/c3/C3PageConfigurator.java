@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -29,7 +29,7 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
                    pluginDescription = "C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more.",
                    pluginVersion = "0.4.11",
                    pluginIconUrl = "bower_components/c3/C3.jpg",
-                   pluginIconImageUrl = "bower_components/c3/C3.jpg",
+                   pluginIconImageUrl = "bower_components/c3/example.png",
                    pluginDependancyUniqueIDs = "d3-js",
                    pluginCategories = "d3, c3, graphing, graphics, svg, export",
                    pluginSubtitle = "C3 enables deeper integration of charts into your application",
