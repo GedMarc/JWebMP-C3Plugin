@@ -29,97 +29,96 @@ import java.util.Objects;
  */
 public class C3RowData<D> extends ArrayList<D> implements Comparable<C3RowData>, Comparator<C3RowData>
 {
-
-    private static final long serialVersionUID = 1L;
-    private C3RowDataType type;
-
-    public C3RowData()
-    {
-    }
-
-    /**
-     * Returns the type for the C3RowData
-     *
-     * @return
-     */
-    public C3RowDataType getType()
-    {
-        return type;
-    }
-
-    /**
-     * Sets the type for the C3Row Data
-     *
-     * @param type
-     */
-    public void setType(C3RowDataType type)
-    {
-        this.type = type;
-    }
-
-    @Override
-    public int compareTo(C3RowData o)
-    {
-        if (this.type == C3RowDataType.Header)
-        {
-            return -1;
-        }
-        else
-        {
-            return 0;
-        }
-    }
-
-    @Override
-    public int compare(C3RowData o1, C3RowData o2)
-    {
-        if (o1 != null && o2 != null)
-        {
-            if (o1.getType() == C3RowDataType.Header)
-            {
-                return -1;
-            }
-            else
-            {
-                return 0;
-            }
-
-        }
-
-        return 0;
-    }
-
-    @Override
-    public int hashCode()
-    {
-        int hash = 7;
-        hash = 89 * hash + Objects.hashCode(this.type);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj)
-    {
-        if (this == obj)
-        {
-            return true;
-        }
-        if (obj == null)
-        {
-            return false;
-        }
-        if (getClass() != obj.getClass())
-        {
-            return false;
-        }
-        final C3RowData<?> other = (C3RowData<?>) obj;
-        if (this.type != other.type)
-        {
-            return false;
-        }
-        return true;
-    }
-    
-    
-
+	
+	private static final long serialVersionUID = 1L;
+	private C3RowDataType type;
+	
+	public C3RowData()
+	{
+	}
+	
+	/**
+	 * Returns the type for the C3RowData
+	 *
+	 * @return
+	 */
+	public C3RowDataType getType()
+	{
+		return type;
+	}
+	
+	/**
+	 * Sets the type for the C3Row Data
+	 *
+	 * @param type
+	 */
+	public void setType(C3RowDataType type)
+	{
+		this.type = type;
+	}
+	
+	@Override
+	public int compareTo(C3RowData o)
+	{
+		if (this.type == C3RowDataType.Header)
+		{
+			return -1;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	
+	@Override
+	public int compare(C3RowData o1, C3RowData o2)
+	{
+		if (o1 != null && o2 != null)
+		{
+			if (o1.getType() == C3RowDataType.Header)
+			{
+				return -1;
+			}
+			else
+			{
+				return 0;
+			}
+			
+		}
+		
+		return 0;
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		int hash = 7;
+		hash = 89 * hash + Objects.hashCode(this.type);
+		return hash;
+	}
+	
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+		{
+			return true;
+		}
+		if (obj == null)
+		{
+			return false;
+		}
+		if (getClass() != obj.getClass())
+		{
+			return false;
+		}
+		final C3RowData<?> other = (C3RowData<?>) obj;
+		if (this.type != other.type)
+		{
+			return false;
+		}
+		return true;
+	}
+	
+	
 }

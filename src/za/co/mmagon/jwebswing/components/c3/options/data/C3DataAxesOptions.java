@@ -17,19 +17,18 @@
 package za.co.mmagon.jwebswing.components.c3.options.data;
 
 /**
- *
  * @author GedMarc
  * @since 09 Mar 2016
  */
 public enum C3DataAxesOptions
 {
-
-    Y,
-    Y2;
-
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase();
-    }
+	
+	Y,
+	Y2;
+	
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase();
+	}
 }

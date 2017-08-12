@@ -17,7 +17,6 @@
 package za.co.mmagon.jwebswing.components.c3.options.data;
 
 /**
- *
  * @author GedMarc
  * @since 09 Mar 2016
  */

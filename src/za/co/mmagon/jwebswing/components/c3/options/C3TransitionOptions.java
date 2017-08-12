@@ -19,47 +19,46 @@ package za.co.mmagon.jwebswing.components.c3.options;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author GedMarc
  * @since 09 Mar 2016
  */
 public class C3TransitionOptions extends JavaScriptPart
 {
-
-    private static final long serialVersionUID = 1L;
-
-    private Integer duration;
-
-    public C3TransitionOptions()
-    {
-    }
-
-    /**
-     * Set duration of transition (in milliseconds) for chart animation.<p>
-     * Note:
-     * <p>
-     * <p>
-     * If 0 or null set, transition will be skipped. So, this makes initial rendering faster especially in case you have a lot of data.<p>
-     *
-     * @return
-     */
-    public Integer getDuration()
-    {
-        return duration;
-    }
-
-    /**
-     * Set duration of transition (in milliseconds) for chart animation.<p>
-     * Note:
-     * <p>
-     * <p>
-     * If 0 or null set, transition will be skipped. So, this makes initial rendering faster especially in case you have a lot of data.<p>
-     *
-     * @param duration
-     */
-    public void setDuration(Integer duration)
-    {
-        this.duration = duration;
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	
+	private Integer duration;
+	
+	public C3TransitionOptions()
+	{
+	}
+	
+	/**
+	 * Set duration of transition (in milliseconds) for chart animation.<p>
+	 * Note:
+	 * <p>
+	 * <p>
+	 * If 0 or null set, transition will be skipped. So, this makes initial rendering faster especially in case you have a lot of data.<p>
+	 *
+	 * @return
+	 */
+	public Integer getDuration()
+	{
+		return duration;
+	}
+	
+	/**
+	 * Set duration of transition (in milliseconds) for chart animation.<p>
+	 * Note:
+	 * <p>
+	 * <p>
+	 * If 0 or null set, transition will be skipped. So, this makes initial rendering faster especially in case you have a lot of data.<p>
+	 *
+	 * @param duration
+	 */
+	public void setDuration(Integer duration)
+	{
+		this.duration = duration;
+	}
+	
 }

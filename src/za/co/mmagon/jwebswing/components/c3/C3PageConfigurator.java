@@ -21,31 +21,30 @@ import za.co.mmagon.jwebswing.PageConfigurator;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
 
 /**
- *
  * @author Marc Magon
  */
 @PluginInformation(pluginName = "C3.js",
-                   pluginUniqueName = "c3-js",
-                   pluginDescription = "C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more.",
-                   pluginVersion = "0.4.11",
-                   pluginIconUrl = "bower_components/c3/C3.jpg",
-                   pluginIconImageUrl = "bower_components/c3/example.png",
-                   pluginDependancyUniqueIDs = "d3-js",
-                   pluginCategories = "d3, c3, graphing, graphics, svg, export",
-                   pluginSubtitle = "C3 enables deeper integration of charts into your application",
-                   pluginGitUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin", pluginSourceUrl = "https://github.com/c3js/c3",
-                   pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin/wiki",
-                   pluginOriginalHomepage = "http://www.c3js.org/",
-                   pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/C3Plugin.jar/download")
+		pluginUniqueName = "c3-js",
+		pluginDescription = "C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more.",
+		pluginVersion = "0.4.11",
+		pluginIconUrl = "bower_components/c3/C3.jpg",
+		pluginIconImageUrl = "bower_components/c3/example.png",
+		pluginDependancyUniqueIDs = "d3-js",
+		pluginCategories = "d3, c3, graphing, graphics, svg, export",
+		pluginSubtitle = "C3 enables deeper integration of charts into your application",
+		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin", pluginSourceUrl = "https://github.com/c3js/c3",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin/wiki",
+		pluginOriginalHomepage = "http://www.c3js.org/",
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/C3Plugin.jar/download")
 public class C3PageConfigurator extends PageConfigurator
 {
-
-    private static final long serialVersionUID = 1L;
-
-    @Override
-    public Page configure(Page page)
-    {
-        return page;
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	
+	@Override
+	public Page configure(Page page)
+	{
+		return page;
+	}
+	
 }

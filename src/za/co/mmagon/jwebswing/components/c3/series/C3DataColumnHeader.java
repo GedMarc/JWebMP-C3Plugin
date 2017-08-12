@@ -16,9 +16,10 @@
  */
 package za.co.mmagon.jwebswing.components.c3.series;
 
-import com.fasterxml.jackson.annotation.*;
-import java.io.*;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.*;
+import com.fasterxml.jackson.annotation.JsonValue;
+import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
+
+import java.io.Serializable;
 
 /**
  * Denotes a column header for C3 Data Objects
@@ -28,48 +29,49 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.*;
  */
 public class C3DataColumnHeader extends JavaScriptPart implements Serializable
 {
-    private static final long serialVersionUID = 1L;
-    private String name;
+	private static final long serialVersionUID = 1L;
+	private String name;
 
-    /**
-     * Constructs a new column header with the given name
-     *
-     * @param name
-     */
-    public C3DataColumnHeader(String name)
-    {
-        this.name = name;
-    }
+	/**
+	 * Constructs a new column header with the given name
+	 *
+	 * @param name
+	 */
+	public C3DataColumnHeader(String name)
+	{
+		this.name = name;
+	}
 
-    /**
-     * Return the currently assigned name.
-     * @return 
-     */
-    public String getName()
-    {
-        return name;
-    }
+	/**
+	 * Return the currently assigned name.
+	 *
+	 * @return
+	 */
+	public String getName()
+	{
+		return name;
+	}
 
-    /**
-     * Sets this columns currently assigned name
-     *
-     * @param name
-     */
-    public void setName(String name)
-    {
-        this.name = name;
-    }
+	/**
+	 * Sets this columns currently assigned name
+	 *
+	 * @param name
+	 */
+	public void setName(String name)
+	{
+		this.name = name;
+	}
 
-    /**
-     * Returns this column header's name
-     *
-     * @return
-     */
-    @JsonValue
-    @Override
-    public String toString()
-    {
-        return getName();
-    }
+	/**
+	 * Returns this column header's name
+	 *
+	 * @return
+	 */
+	@JsonValue
+	@Override
+	public String toString()
+	{
+		return getName();
+	}
 
 }

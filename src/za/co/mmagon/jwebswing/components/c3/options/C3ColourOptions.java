@@ -16,95 +16,97 @@
  */
 package za.co.mmagon.jwebswing.components.c3.options;
 
-import java.util.ArrayList;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
+import java.util.ArrayList;
+
 /**
- *
  * @author GedMarc
  * @since 09 Mar 2016
  */
 public class C3ColourOptions extends JavaScriptPart
 {
-
-    private static final long serialVersionUID = 1L;
-
-    private ArrayList<String> pattern;
-    /**
-     * @deprecated
-     */
-    private String threshold;
-
-    public C3ColourOptions()
-    {
-    }
-
-    /**
-     * Set custom color pattern.<p>
-     * Default:
-     * <p>
-     * <p>
-     * undefined<p>
-     * Format:
-     * <p>
-     * <p>
-     * color: {
-     * <p>
-     * pattern: ['#1f77b4', '#aec7e8', ...]
-     * <p>
-     * }
-     * <p>
-     *
-     *
-     * @return
-     */
-    public ArrayList<String> getPattern()
-    {
-        return pattern;
-    }
-
-    /**
-     * Set custom color pattern.<p>
-     * Default:
-     * <p>
-     * <p>
-     * undefined<p>
-     * Format:
-     * <p>
-     * <p>
-     * color: {
-     * <p>
-     * pattern: ['#1f77b4', '#aec7e8', ...]
-     * <p>
-     * }
-     * <p>
-     * @param pattern
-     */
-    public void setPattern(ArrayList<String> pattern)
-    {
-        this.pattern = pattern;
-    }
-
-    /**
-     * not yet
-     *
-     * @deprecated
-     * @return
-     */
-    public String getThreshold()
-    {
-        return threshold;
-    }
-
-    /**
-     * not yet
-     *
-     * @deprecated
-     * @param threshold
-     */
-    public void setThreshold(String threshold)
-    {
-        this.threshold = threshold;
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	
+	private ArrayList<String> pattern;
+	/**
+	 * @deprecated
+	 */
+	private String threshold;
+	
+	public C3ColourOptions()
+	{
+	}
+	
+	/**
+	 * Set custom color pattern.<p>
+	 * Default:
+	 * <p>
+	 * <p>
+	 * undefined<p>
+	 * Format:
+	 * <p>
+	 * <p>
+	 * color: {
+	 * <p>
+	 * pattern: ['#1f77b4', '#aec7e8', ...]
+	 * <p>
+	 * }
+	 * <p>
+	 *
+	 * @return
+	 */
+	public ArrayList<String> getPattern()
+	{
+		return pattern;
+	}
+	
+	/**
+	 * Set custom color pattern.<p>
+	 * Default:
+	 * <p>
+	 * <p>
+	 * undefined<p>
+	 * Format:
+	 * <p>
+	 * <p>
+	 * color: {
+	 * <p>
+	 * pattern: ['#1f77b4', '#aec7e8', ...]
+	 * <p>
+	 * }
+	 * <p>
+	 *
+	 * @param pattern
+	 */
+	public void setPattern(ArrayList<String> pattern)
+	{
+		this.pattern = pattern;
+	}
+	
+	/**
+	 * not yet
+	 *
+	 * @return
+	 *
+	 * @deprecated
+	 */
+	public String getThreshold()
+	{
+		return threshold;
+	}
+	
+	/**
+	 * not yet
+	 *
+	 * @param threshold
+	 *
+	 * @deprecated
+	 */
+	public void setThreshold(String threshold)
+	{
+		this.threshold = threshold;
+	}
+	
 }

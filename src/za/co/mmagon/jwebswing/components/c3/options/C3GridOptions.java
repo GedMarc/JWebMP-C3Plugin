@@ -19,15 +19,14 @@ package za.co.mmagon.jwebswing.components.c3.options;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author GedMarc
  * @since 09 Mar 2016
  */
 public class C3GridOptions extends JavaScriptPart
 {
 
-    public C3GridOptions()
-    {
-    }
+	public C3GridOptions()
+	{
+	}
 
 }

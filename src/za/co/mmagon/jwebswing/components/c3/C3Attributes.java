@@ -19,16 +19,15 @@ package za.co.mmagon.jwebswing.components.c3;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum C3Attributes implements AttributeDefinitions
 {
-    Visibility;
-
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
+	Visibility;
+	
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 }

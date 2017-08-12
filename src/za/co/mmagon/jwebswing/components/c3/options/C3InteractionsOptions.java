@@ -19,43 +19,42 @@ package za.co.mmagon.jwebswing.components.c3.options;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author GedMarc
  * @since 09 Mar 2016
  */
 public class C3InteractionsOptions extends JavaScriptPart
 {
-
-    private static final long serialVersionUID = 1L;
-
-    private Boolean enabled;
-
-    public C3InteractionsOptions()
-    {
-    }
-
-    /**
-     * Indicate if the chart should have interactions.
-     * <p>
-     * If false is set, all of interactions (showing/hiding tooltip, selection, mouse events, etc) will be disabled.
-     *
-     * @return
-     */
-    public Boolean getEnabled()
-    {
-        return enabled;
-    }
-
-    /**
-     * Indicate if the chart should have interactions.
-     * <p>
-     * If false is set, all of interactions (showing/hiding tooltip, selection, mouse events, etc) will be disabled.
-     *
-     * @param enabled
-     */
-    public void setEnabled(Boolean enabled)
-    {
-        this.enabled = enabled;
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	
+	private Boolean enabled;
+	
+	public C3InteractionsOptions()
+	{
+	}
+	
+	/**
+	 * Indicate if the chart should have interactions.
+	 * <p>
+	 * If false is set, all of interactions (showing/hiding tooltip, selection, mouse events, etc) will be disabled.
+	 *
+	 * @return
+	 */
+	public Boolean getEnabled()
+	{
+		return enabled;
+	}
+	
+	/**
+	 * Indicate if the chart should have interactions.
+	 * <p>
+	 * If false is set, all of interactions (showing/hiding tooltip, selection, mouse events, etc) will be disabled.
+	 *
+	 * @param enabled
+	 */
+	public void setEnabled(Boolean enabled)
+	{
+		this.enabled = enabled;
+	}
+	
 }

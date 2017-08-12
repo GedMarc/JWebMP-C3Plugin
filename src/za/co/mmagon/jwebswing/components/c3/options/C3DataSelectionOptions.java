@@ -26,11 +26,11 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class C3DataSelectionOptions extends JavaScriptPart
 {
-
-    private static final long serialVersionUID = 1L;
-
-    public C3DataSelectionOptions()
-    {
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	
+	public C3DataSelectionOptions()
+	{
+	}
+	
 }
