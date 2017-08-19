@@ -58,7 +58,7 @@ public class C3ColumnData<D extends JavaScriptPart> extends ArrayList<D>
 	{
 		remove((D) getColumnHeader());
 		add(0, (D) getColumnHeader());
-		return JavaScriptPart.objectAsString(this);
+		return new JavaScriptPart().objectAsString(this);
 	}
 	
 	/**
