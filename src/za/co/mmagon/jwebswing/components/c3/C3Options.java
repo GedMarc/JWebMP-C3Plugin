@@ -87,6 +87,25 @@ public class C3Options extends JavaScriptPart
 	}
 	
 	/**
+	 * The CSS selector or the element which the chart will be set to. D3 selection object can be specified. If other chart is set already, it will be replaced with the new one (only one chart can be
+	 * set in one element).
+	 * <p>
+	 * If this option is not specified, the chart will be generated but not be set. Instead, we can access the element by chart.element and set it by ourselves.
+	 * Note:
+	 * <p>
+	 * When chart is not binded, c3 starts observing if chart.element is binded by MutationObserver. In this case, polyfill is required in IE9 and IE10 becuase they do not support MutationObserver. On
+	 * the other hand, if chart always will be binded, polyfill will not be required because MutationObserver will never be called.
+	 * Default:
+	 * #chart
+	 *
+	 * @param bindto
+	 */
+	public void setBindto(String bindto)
+	{
+		this.bindto = bindto;
+	}
+	
+	/**
 	 * The CSS selector or the element which the chart will be set to. D3 selection object can be specified. If other chart is set already, it will be replaced with the new one (only one chart can
 	 * be set in one element)
 	 * <p>
@@ -106,25 +125,6 @@ public class C3Options extends JavaScriptPart
 	public void setBindto(Component bindto)
 	{
 		this.bindto = bindto.getID(true);
-	}
-	
-	/**
-	 * The CSS selector or the element which the chart will be set to. D3 selection object can be specified. If other chart is set already, it will be replaced with the new one (only one chart can be
-	 * set in one element).
-	 * <p>
-	 * If this option is not specified, the chart will be generated but not be set. Instead, we can access the element by chart.element and set it by ourselves.
-	 * Note:
-	 * <p>
-	 * When chart is not binded, c3 starts observing if chart.element is binded by MutationObserver. In this case, polyfill is required in IE9 and IE10 becuase they do not support MutationObserver. On
-	 * the other hand, if chart always will be binded, polyfill will not be required because MutationObserver will never be called.
-	 * Default:
-	 * #chart
-	 *
-	 * @param bindto
-	 */
-	public void setBindto(String bindto)
-	{
-		this.bindto = bindto;
 	}
 	
 	/**
