@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.components.c3;
 
 import za.co.mmagon.jwebswing.Component;
+import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 import za.co.mmagon.jwebswing.components.c3.options.*;
 import za.co.mmagon.jwebswing.components.c3.options.data.C3DataOptions;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
@@ -62,7 +63,7 @@ public class C3Options extends JavaScriptPart
 	 *
 	 * @param bindTo
 	 */
-	public C3Options(Component bindTo)
+	public C3Options(ComponentHierarchyBase bindTo)
 	{
 	
 	}

@@ -22,6 +22,7 @@ import za.co.mmagon.jwebswing.components.c3.series.C3DataColumnHeader;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  * An extended ArrayList which will always have the first value as a column header
@@ -56,7 +57,7 @@ public class C3ColumnData<D extends JavaScriptPart> extends ArrayList<D>
 	@JsonValue
 	public String getJSON()
 	{
-		remove((D) getColumnHeader());
+		remove(getColumnHeader());
 		add(0, (D) getColumnHeader());
 		return new JavaScriptPart().objectAsString(this);
 	}
@@ -85,4 +86,28 @@ public class C3ColumnData<D extends JavaScriptPart> extends ArrayList<D>
 		this.columnHeader = columnHeader;
 	}
 	
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof C3ColumnData))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+		C3ColumnData<?> that = (C3ColumnData<?>) o;
+		return Objects.equals(getColumnHeader(), that.getColumnHeader());
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getColumnHeader());
+	}
 }

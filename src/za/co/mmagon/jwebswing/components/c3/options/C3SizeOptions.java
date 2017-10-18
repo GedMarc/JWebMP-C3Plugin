@@ -38,6 +38,7 @@ public class C3SizeOptions extends JavaScriptPart
 
 	public C3SizeOptions()
 	{
+		//Nothing Needed
 	}
 
 	/**

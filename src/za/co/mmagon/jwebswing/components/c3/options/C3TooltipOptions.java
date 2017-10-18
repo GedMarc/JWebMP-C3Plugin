@@ -27,6 +27,7 @@ public class C3TooltipOptions extends JavaScriptPart
 	
 	public C3TooltipOptions()
 	{
+		//Nothing Needed
 	}
 	
 }

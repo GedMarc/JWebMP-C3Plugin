@@ -24,9 +24,12 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class C3GridOptions extends JavaScriptPart
 {
-
+	/**
+	 * The grid options for the C3 Library
+	 */
 	public C3GridOptions()
 	{
+		//Nothing Needed
 	}
 
 }

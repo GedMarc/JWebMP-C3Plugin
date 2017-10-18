@@ -34,6 +34,7 @@ public class C3PaddingOptions extends JavaScriptPart
 	
 	public C3PaddingOptions()
 	{
+		//C3 Padding Options
 	}
 	
 	/**

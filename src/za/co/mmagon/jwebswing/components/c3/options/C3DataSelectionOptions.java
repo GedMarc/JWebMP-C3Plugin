@@ -31,6 +31,7 @@ public class C3DataSelectionOptions extends JavaScriptPart
 	
 	public C3DataSelectionOptions()
 	{
+		//Nothing Needed
 	}
 	
 }

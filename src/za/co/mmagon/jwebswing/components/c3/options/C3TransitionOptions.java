@@ -31,6 +31,7 @@ public class C3TransitionOptions extends JavaScriptPart
 	
 	public C3TransitionOptions()
 	{
+		//Nothing Needed
 	}
 	
 	/**

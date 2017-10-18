@@ -24,9 +24,12 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class C3AxisOptions extends JavaScriptPart
 {
-	
+	/**
+	 * Constructs a new instance of the C3 Axis JS Options
+	 */
 	public C3AxisOptions()
 	{
+		//Nothing needed
 	}
 	
 }

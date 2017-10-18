@@ -25,7 +25,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 public enum C3DataOrderOptions
 {
 	Asc,
-	Desc;;
+	Desc;
 	
 	@Override
 	@JsonValue

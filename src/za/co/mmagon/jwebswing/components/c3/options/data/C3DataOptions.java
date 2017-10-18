@@ -26,6 +26,8 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Represents a C3 Graphing Data Structure
@@ -43,29 +45,29 @@ public class C3DataOptions extends JavaScriptPart
 	private C3RowData rows;
 	private C3ColumnData columns;
 	private String mimeType;
-	private ArrayList<String> keys;
+	private List<String> keys;
 	private C3DataColumnHeader x;
-	private HashMap<C3DataColumnHeader, C3DataXAxis> xs;
+	private Map<C3DataColumnHeader, C3DataXAxis> xs;
 	private String xFormat;
 	private String xLocaltime;
 	private String xSort;
-	private HashMap<C3DataColumnHeader, String> names;
-	private HashMap<C3DataColumnHeader, String> classes;
-	private ArrayList<ArrayList<C3DataColumnHeader>> groups;
-	private HashMap<C3DataColumnHeader, C3DataAxesOptions> axes;
+	private Map<C3DataColumnHeader, String> names;
+	private Map<C3DataColumnHeader, String> classes;
+	private List<List<C3DataColumnHeader>> groups;
+	private Map<C3DataColumnHeader, C3DataAxesOptions> axes;
 	private C3GraphTypeOptions type;
-	private HashMap<C3DataColumnHeader, C3GraphTypeOptions> types;
+	private Map<C3DataColumnHeader, C3GraphTypeOptions> types;
 	private Boolean labels;
 	private C3DataOrderOptions order;
-	private HashMap<C3DataColumnHeader, C3RegionOptions> regions;
+	private Map<C3DataColumnHeader, C3RegionOptions> regions;
 	private JavascriptFunction color;
-	private HashMap<C3DataColumnHeader, ColourHex> colors;
-	private ArrayList<C3DataColumnHeader> hide;
+	private Map<C3DataColumnHeader, ColourHex> colors;
+	private List<C3DataColumnHeader> hide;
 	private C3DataEmptyOptions empty;
 	private C3DataSelectionOptions selection;
 	
 	@JsonIgnore
-	private ArrayList<C3DataColumnHeader> columnHeaders;
+	private List<C3DataColumnHeader> columnHeaders;
 	@JsonIgnore
 	private boolean renderByRow;
 	@JsonIgnore
@@ -84,7 +86,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param columnHeaders
 	 */
-	public C3DataOptions(ArrayList<C3DataColumnHeader> columnHeaders)
+	public C3DataOptions(List<C3DataColumnHeader> columnHeaders)
 	{
 		this.columnHeaders = columnHeaders;
 	}
@@ -94,7 +96,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public ArrayList<C3DataColumnHeader> getColumnHeaders()
+	public List<C3DataColumnHeader> getColumnHeaders()
 	{
 		if (columnHeaders == null)
 		{
@@ -108,7 +110,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param columnHeaders
 	 */
-	public void setColumnHeaders(ArrayList<C3DataColumnHeader> columnHeaders)
+	public void setColumnHeaders(List<C3DataColumnHeader> columnHeaders)
 	{
 		this.columnHeaders = columnHeaders;
 	}
@@ -269,7 +271,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public ArrayList<String> getKeys()
+	public List<String> getKeys()
 	{
 		if (keys == null)
 		{
@@ -283,7 +285,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param keys
 	 */
-	public void setKeys(ArrayList<String> keys)
+	public void setKeys(List<String> keys)
 	{
 		this.keys = keys;
 	}
@@ -321,7 +323,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public HashMap<C3DataColumnHeader, C3DataXAxis> getXs()
+	public Map<C3DataColumnHeader, C3DataXAxis> getXs()
 	{
 		if (xs == null)
 		{
@@ -337,7 +339,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param xs
 	 */
-	public void setXs(HashMap<C3DataColumnHeader, C3DataXAxis> xs)
+	public void setXs(Map<C3DataColumnHeader, C3DataXAxis> xs)
 	{
 		this.xs = xs;
 	}
@@ -366,8 +368,7 @@ public class C3DataOptions extends JavaScriptPart
 	 * not yet
 	 *
 	 * @return
-	 *
-	 * @deprecated
+	 
 	 */
 	public String getxLocaltime()
 	{
@@ -378,8 +379,7 @@ public class C3DataOptions extends JavaScriptPart
 	 * not yet
 	 *
 	 * @param xLocaltime
-	 *
-	 * @deprecated
+	 
 	 */
 	public void setxLocaltime(String xLocaltime)
 	{
@@ -391,7 +391,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 *
-	 * @deprecated
+	 *
 	 */
 	public String getxSort()
 	{
@@ -403,8 +403,8 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param xSort
 	 *
-	 * @deprecated
 	 */
+	
 	public void setxSort(String xSort)
 	{
 		this.xSort = xSort;
@@ -415,7 +415,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public HashMap<C3DataColumnHeader, String> getNames()
+	public Map<C3DataColumnHeader, String> getNames()
 	{
 		if (names == null)
 		{
@@ -429,7 +429,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param names
 	 */
-	public void setNames(HashMap<C3DataColumnHeader, String> names)
+	public void setNames(Map<C3DataColumnHeader, String> names)
 	{
 		this.names = names;
 	}
@@ -441,7 +441,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public HashMap<C3DataColumnHeader, String> getClasses()
+	public Map<C3DataColumnHeader, String> getClasses()
 	{
 		if (classes == null)
 		{
@@ -457,7 +457,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param classes
 	 */
-	public void setClasses(HashMap<C3DataColumnHeader, String> classes)
+	public void setClasses(Map<C3DataColumnHeader, String> classes)
 	{
 		this.classes = classes;
 	}
@@ -467,7 +467,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public ArrayList<ArrayList<C3DataColumnHeader>> getGroups()
+	public List<List<C3DataColumnHeader>> getGroups()
 	{
 		if (groups == null)
 		{
@@ -481,7 +481,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param groups
 	 */
-	public void setGroups(ArrayList<ArrayList<C3DataColumnHeader>> groups)
+	public void setGroups(List<List<C3DataColumnHeader>> groups)
 	{
 		this.groups = groups;
 	}
@@ -491,7 +491,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public HashMap<C3DataColumnHeader, C3DataAxesOptions> getAxes()
+	public Map<C3DataColumnHeader, C3DataAxesOptions> getAxes()
 	{
 		if (axes == null)
 		{
@@ -505,7 +505,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param axes
 	 */
-	public void setAxes(HashMap<C3DataColumnHeader, C3DataAxesOptions> axes)
+	public void setAxes(Map<C3DataColumnHeader, C3DataAxesOptions> axes)
 	{
 		this.axes = axes;
 	}
@@ -541,7 +541,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public HashMap<C3DataColumnHeader, C3GraphTypeOptions> getTypes()
+	public Map<C3DataColumnHeader, C3GraphTypeOptions> getTypes()
 	{
 		if (types == null)
 		{
@@ -557,7 +557,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param types
 	 */
-	public void setTypes(HashMap<C3DataColumnHeader, C3GraphTypeOptions> types)
+	public void setTypes(Map<C3DataColumnHeader, C3GraphTypeOptions> types)
 	{
 		this.types = types;
 	}
@@ -619,7 +619,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public HashMap<C3DataColumnHeader, C3RegionOptions> getRegions()
+	public Map<C3DataColumnHeader, C3RegionOptions> getRegions()
 	{
 		return regions;
 	}
@@ -635,7 +635,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param regions
 	 */
-	public void setRegions(HashMap<C3DataColumnHeader, C3RegionOptions> regions)
+	public void setRegions(Map<C3DataColumnHeader, C3RegionOptions> regions)
 	{
 		this.regions = regions;
 	}
@@ -671,7 +671,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public HashMap<C3DataColumnHeader, ColourHex> getColors()
+	public Map<C3DataColumnHeader, ColourHex> getColors()
 	{
 		if (colors == null)
 		{
@@ -685,7 +685,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param colors
 	 */
-	public void setColors(HashMap<C3DataColumnHeader, ColourHex> colors)
+	public void setColors(Map<C3DataColumnHeader, ColourHex> colors)
 	{
 		this.colors = colors;
 	}
@@ -695,7 +695,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public ArrayList<C3DataColumnHeader> getHide()
+	public List<C3DataColumnHeader> getHide()
 	{
 		if (hide == null)
 		{
@@ -709,7 +709,7 @@ public class C3DataOptions extends JavaScriptPart
 	 *
 	 * @param hide
 	 */
-	public void setHide(ArrayList<C3DataColumnHeader> hide)
+	public void setHide(List<C3DataColumnHeader> hide)
 	{
 		this.hide = hide;
 	}

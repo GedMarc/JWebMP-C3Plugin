@@ -27,6 +27,7 @@ public class C3RegionOptions extends JavaScriptPart
 	
 	public C3RegionOptions()
 	{
+		//Nothing Needed
 	}
 	
 }

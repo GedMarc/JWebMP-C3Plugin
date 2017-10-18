@@ -27,6 +27,7 @@ public class C3LegendOptions extends JavaScriptPart
 	
 	public C3LegendOptions()
 	{
+		//C3 Legend Options
 	}
 	
 }

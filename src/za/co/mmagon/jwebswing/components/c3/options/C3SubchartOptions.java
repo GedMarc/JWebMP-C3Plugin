@@ -27,6 +27,7 @@ public class C3SubchartOptions extends JavaScriptPart
 	
 	public C3SubchartOptions()
 	{
+		//Nothing Needed
 	}
 	
 }

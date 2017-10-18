@@ -35,6 +35,7 @@ public class C3RowData<D> extends ArrayList<D> implements Comparable<C3RowData>,
 	
 	public C3RowData()
 	{
+		//Nothing Needed
 	}
 	
 	/**
@@ -90,35 +91,27 @@ public class C3RowData<D> extends ArrayList<D> implements Comparable<C3RowData>,
 	}
 	
 	@Override
-	public int hashCode()
+	public boolean equals(Object o)
 	{
-		int hash = 7;
-		hash = 89 * hash + Objects.hashCode(this.type);
-		return hash;
-	}
-	
-	@Override
-	public boolean equals(Object obj)
-	{
-		if (this == obj)
+		if (this == o)
 		{
 			return true;
 		}
-		if (obj == null)
+		if (!(o instanceof C3RowData))
 		{
 			return false;
 		}
-		if (getClass() != obj.getClass())
+		if (!super.equals(o))
 		{
 			return false;
 		}
-		final C3RowData<?> other = (C3RowData<?>) obj;
-		if (this.type != other.type)
-		{
-			return false;
-		}
-		return true;
+		C3RowData<?> c3RowData = (C3RowData<?>) o;
+		return getType() == c3RowData.getType();
 	}
 	
-	
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getType());
+	}
 }

@@ -27,6 +27,7 @@ public class C3ZoomOptions extends JavaScriptPart
 	
 	public C3ZoomOptions()
 	{
+		//Nothing Needed
 	}
 	
 }

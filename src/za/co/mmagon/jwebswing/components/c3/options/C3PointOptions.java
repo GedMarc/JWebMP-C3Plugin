@@ -27,6 +27,7 @@ public class C3PointOptions extends JavaScriptPart
 
 	public C3PointOptions()
 	{
+		//Nothing Needed
 	}
 
 }

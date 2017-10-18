@@ -18,7 +18,7 @@ package za.co.mmagon.jwebswing.components.c3.options;
 
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author GedMarc
@@ -28,15 +28,21 @@ public class C3ColourOptions extends JavaScriptPart
 {
 	
 	private static final long serialVersionUID = 1L;
-	
-	private ArrayList<String> pattern;
 	/**
-	 * @deprecated
+	 * List of colour patterns
+	 */
+	private List<String> pattern;
+	/**
+	 *
 	 */
 	private String threshold;
 	
+	/**
+	 * C3 Colour options
+	 */
 	public C3ColourOptions()
 	{
+		//Nothing needed
 	}
 	
 	/**
@@ -57,7 +63,7 @@ public class C3ColourOptions extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public ArrayList<String> getPattern()
+	public List<String> getPattern()
 	{
 		return pattern;
 	}
@@ -80,17 +86,14 @@ public class C3ColourOptions extends JavaScriptPart
 	 *
 	 * @param pattern
 	 */
-	public void setPattern(ArrayList<String> pattern)
+	public void setPattern(List<String> pattern)
 	{
 		this.pattern = pattern;
 	}
 	
 	/**
-	 * not yet
-	 *
+	 * Configures the threshold
 	 * @return
-	 *
-	 * @deprecated
 	 */
 	public String getThreshold()
 	{
@@ -98,11 +101,9 @@ public class C3ColourOptions extends JavaScriptPart
 	}
 	
 	/**
-	 * not yet
+	 * Sets the threshold
 	 *
 	 * @param threshold
-	 *
-	 * @deprecated
 	 */
 	public void setThreshold(String threshold)
 	{

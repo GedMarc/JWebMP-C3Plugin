@@ -24,9 +24,12 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class C3DataEmptyOptions extends JavaScriptPart
 {
-
+	/**
+	 * C3 Data Empty Options
+	 */
 	public C3DataEmptyOptions()
 	{
+		//Nothing needed
 	}
 
 	@Override

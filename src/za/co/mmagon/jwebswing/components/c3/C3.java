@@ -19,6 +19,8 @@ package za.co.mmagon.jwebswing.components.c3;
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
+import java.util.Objects;
+
 /**
  * An implementation of the C3 Graphs project.
  * <p>
@@ -52,9 +54,34 @@ public class C3 extends Div<C3Children, C3Attributes, C3Features, C3Events, C3>
 		return feature;
 	}
 	
+	@Override
 	public C3Options getOptions()
 	{
 		return getFeature().getOptions();
 	}
 	
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof C3))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+		C3 c3 = (C3) o;
+		return Objects.equals(getFeature(), c3.getFeature());
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getFeature());
+	}
 }

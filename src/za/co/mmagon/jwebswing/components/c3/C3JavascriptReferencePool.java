@@ -32,14 +32,11 @@ public enum C3JavascriptReferencePool
 	/**
 	 * The basic core for the graphing system
 	 */
-	C3GraphCore(new JavascriptReference("C3", 0.410, "bower_components/c3/c3.js", "https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.js", 15)), /**
- * If the ie is less than version 9 this is required
- */
-	//ExCanvas(new JavascriptReference("excanvas", 0.410, "javascript/jquery.plot/excanvas.js", "https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/excanvas.js", 16)),;
+	C3GraphCore(new JavascriptReference("C3", 0.410, "bower_components/c3/c3.js", "https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.js", 15)),
 	;
 	private final JavascriptReference reference;
 	
-	private C3JavascriptReferencePool(JavascriptReference reference)
+	C3JavascriptReferencePool(JavascriptReference reference)
 	{
 		this.reference = reference;
 		

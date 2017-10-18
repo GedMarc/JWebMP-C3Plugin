@@ -31,6 +31,7 @@ public class C3InteractionsOptions extends JavaScriptPart
 	
 	public C3InteractionsOptions()
 	{
+		//Nothing Needed
 	}
 	
 	/**
