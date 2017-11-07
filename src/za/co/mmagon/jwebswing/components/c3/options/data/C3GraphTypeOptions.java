@@ -16,6 +16,8 @@
  */
 package za.co.mmagon.jwebswing.components.c3.options.data;
 
+import za.co.mmagon.jwebswing.utilities.StaticStrings;
+
 /**
  * @author GedMarc
  * @since 09 Mar 2016
@@ -38,6 +40,6 @@ public enum C3GraphTypeOptions
 	@Override
 	public String toString()
 	{
-		return name().replace('_', '-').toLowerCase();
+		return name().replace(StaticStrings.CHAR_UNDERSCORE, '-').toLowerCase();
 	}
 }
