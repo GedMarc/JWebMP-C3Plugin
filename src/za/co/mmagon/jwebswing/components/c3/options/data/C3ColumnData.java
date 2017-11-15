@@ -55,6 +55,7 @@ public class C3ColumnData<D extends JavaScriptPart> extends ArrayList<D>
 	 * @return
 	 */
 	@JsonValue
+	@SuppressWarnings("unchecked")
 	public String getJSON()
 	{
 		remove(getColumnHeader());
