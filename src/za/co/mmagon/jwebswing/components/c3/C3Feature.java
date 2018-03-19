@@ -19,7 +19,6 @@ package za.co.mmagon.jwebswing.components.c3;
 import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
-import za.co.mmagon.jwebswing.components.d3.D3JavascriptReferencePool;
 
 import java.util.Objects;
 
@@ -30,7 +29,9 @@ import java.util.Objects;
  * @version 1.0
  * @since 2013/01/16
  */
-public class C3Feature extends Feature<C3Options, C3Feature> implements C3Features, GlobalFeatures
+public class C3Feature
+		extends Feature<C3Options, C3Feature>
+		implements C3Features, GlobalFeatures
 {
 
 	private static final long serialVersionUID = 1L;
@@ -47,7 +48,6 @@ public class C3Feature extends Feature<C3Options, C3Feature> implements C3Featur
 	{
 		super("C3JSFeature");
 		setComponent(forComponent);
-		getJavascriptReferences().add(D3JavascriptReferencePool.D3DrawingLibrary.getReference());
 		getJavascriptReferences().add(C3JavascriptReferencePool.C3GraphCore.getReference());
 		getCssReferences().add(C3CSSReferencePool.C3GraphCore.getReference());
 	}
@@ -75,9 +75,9 @@ public class C3Feature extends Feature<C3Options, C3Feature> implements C3Featur
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-		
+
 	}
-	
+
 	@Override
 	public boolean equals(Object o)
 	{
@@ -94,10 +94,9 @@ public class C3Feature extends Feature<C3Options, C3Feature> implements C3Featur
 			return false;
 		}
 		C3Feature c3Feature = (C3Feature) o;
-		return Objects.equals(getComponent(), c3Feature.getComponent()) &&
-				Objects.equals(getOptions(), c3Feature.getOptions());
+		return Objects.equals(getComponent(), c3Feature.getComponent()) && Objects.equals(getOptions(), c3Feature.getOptions());
 	}
-	
+
 	@Override
 	public int hashCode()
 	{
