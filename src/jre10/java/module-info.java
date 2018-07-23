@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.c3.C3PageConfigurator;
+
 module com.jwebmp.components.c3 {
 	exports com.jwebmp.plugins.c3;
 
@@ -6,4 +9,7 @@ module com.jwebmp.components.c3 {
 	requires com.fasterxml.jackson.annotation;
 
 	requires java.validation;
+
+	provides IPageConfigurator with C3PageConfigurator;
+
 }

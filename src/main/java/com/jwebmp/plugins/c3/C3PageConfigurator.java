@@ -17,8 +17,8 @@
 package com.jwebmp.plugins.c3;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -38,11 +38,8 @@ import com.jwebmp.core.plugins.PluginInformation;
 		pluginOriginalHomepage = "http://www.c3js.org/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/C3Plugin.jar/download")
 public class C3PageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	@Override
 	public Page configure(Page page)
 	{
