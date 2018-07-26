@@ -11,5 +11,8 @@ module com.jwebmp.components.c3 {
 	requires java.validation;
 
 	provides IPageConfigurator with C3PageConfigurator;
-
+	opens com.jwebmp.plugins.c3 to com.fasterxml.jackson.databind,com.jwebmp.core;
+	opens com.jwebmp.plugins.c3.graphs to com.fasterxml.jackson.databind,com.jwebmp.core;
+	opens com.jwebmp.plugins.c3.options to com.fasterxml.jackson.databind,com.jwebmp.core;
+	opens com.jwebmp.plugins.c3.series to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
