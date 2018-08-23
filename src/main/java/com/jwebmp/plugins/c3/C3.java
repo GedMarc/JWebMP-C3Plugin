@@ -19,8 +19,6 @@ package com.jwebmp.plugins.c3;
 import com.jwebmp.core.base.html.Div;
 import com.jwebmp.core.plugins.ComponentInformation;
 
-import java.util.Objects;
-
 /**
  * An implementation of the C3 Graphs project.
  * <p>
@@ -64,27 +62,14 @@ public class C3
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public int hashCode()
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (!(o instanceof C3))
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-		C3 c3 = (C3) o;
-		return Objects.equals(getFeature(), c3.getFeature());
+		return super.hashCode();
 	}
 
 	@Override
-	public int hashCode()
+	public boolean equals(Object o)
 	{
-		return Objects.hash(super.hashCode(), getFeature());
+		return super.equals(o);
 	}
 }

@@ -20,8 +20,6 @@ import com.jwebmp.core.Component;
 import com.jwebmp.core.Feature;
 import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 
-import java.util.Objects;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -30,8 +28,7 @@ import java.util.Objects;
  * @since 2013/01/16
  */
 public class C3Feature
-		extends Feature<C3Options, C3Feature>
-		implements C3Features, GlobalFeatures
+		extends Feature<GlobalFeatures, C3Options, C3Feature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -55,26 +52,13 @@ public class C3Feature
 	@Override
 	public int hashCode()
 	{
-		return Objects.hash(super.hashCode(), getComponent(), getOptions());
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (!(o instanceof C3Feature))
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-		C3Feature c3Feature = (C3Feature) o;
-		return Objects.equals(getComponent(), c3Feature.getComponent()) && Objects.equals(getOptions(), c3Feature.getOptions());
+		return super.equals(obj);
 	}
 
 	/**
