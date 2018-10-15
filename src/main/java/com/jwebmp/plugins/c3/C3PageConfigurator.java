@@ -34,13 +34,13 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "d3-js",
 		pluginCategories = "d3, c3, graphing, graphics, svg, export",
 		pluginSubtitle = "C3 enables deeper integration of charts into your application",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-C3Plugin",
 		pluginSourceUrl = "https://github.com/c3js/c3",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-C3Plugin/wiki",
 		pluginOriginalHomepage = "http://www.c3js.org/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/C3Plugin.jar/download")
 public class C3PageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<C3PageConfigurator>
 {
 	/**
 	 * If this configurator is enabled

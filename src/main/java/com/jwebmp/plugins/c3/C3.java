@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "C3 Graphing",
 		description = "C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more. ",
 		url = "https://www.c3js.org",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-C3Plugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-C3Plugin/wiki")
 public class C3
 		extends Div<C3Children, C3Attributes, C3Features, C3Events, C3>
 {
