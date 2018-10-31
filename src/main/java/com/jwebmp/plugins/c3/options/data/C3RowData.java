@@ -32,7 +32,7 @@ public class C3RowData<D>
 		implements Comparable<C3RowData>, Comparator<C3RowData>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private C3RowDataType type;
 
 	public C3RowData()
@@ -43,7 +43,7 @@ public class C3RowData<D>
 	@Override
 	public int compareTo(C3RowData o)
 	{
-		if (this.type == C3RowDataType.Header)
+		if (type == C3RowDataType.Header)
 		{
 			return -1;
 		}

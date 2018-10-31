@@ -26,7 +26,6 @@ public class C3TransitionOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Integer duration;
 

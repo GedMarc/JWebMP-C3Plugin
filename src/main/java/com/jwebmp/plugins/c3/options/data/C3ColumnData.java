@@ -37,7 +37,7 @@ public class C3ColumnData<D extends JavaScriptPart>
 		extends ArrayList<D>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	@JsonIgnore
 	private C3DataColumnHeader columnHeader;
 

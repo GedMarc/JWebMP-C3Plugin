@@ -26,7 +26,6 @@ public class C3PaddingOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Integer top;
 	private Integer left;

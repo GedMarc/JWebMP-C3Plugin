@@ -28,7 +28,7 @@ public class C3ColourOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * List of colour patterns
 	 */

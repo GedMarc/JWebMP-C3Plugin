@@ -19,8 +19,6 @@ package com.jwebmp.plugins.c3.series;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
-import java.io.Serializable;
-
 /**
  * Denotes a column header for C3 Data Objects
  *
@@ -29,9 +27,9 @@ import java.io.Serializable;
  */
 public class C3DataColumnHeader
 		extends JavaScriptPart
-		implements Serializable
+
 {
-	private static final long serialVersionUID = 1L;
+
 	private String name;
 
 	/**

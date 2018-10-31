@@ -36,7 +36,6 @@ public class C3Options
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private String bindto;
 	private C3SizeOptions size;

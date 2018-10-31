@@ -35,7 +35,7 @@ public class C3
 		extends Div<C3Children, C3Attributes, C3Features, C3Events, C3>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private C3Feature feature;
 
 	/**

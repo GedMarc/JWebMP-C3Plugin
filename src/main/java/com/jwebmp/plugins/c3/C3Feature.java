@@ -31,7 +31,6 @@ public class C3Feature
 		extends Feature<GlobalFeatures, C3Options, C3Feature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private C3Options options;
 

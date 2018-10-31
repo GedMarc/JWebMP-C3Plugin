@@ -39,7 +39,6 @@ public class C3DataOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private String url;
 	private JavaScriptPart json;
