@@ -1,9 +1,3 @@
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.c3.C3PageConfigurator;
-import com.jwebmp.plugins.c3.implementations.C3ExclusionsModule;
-
 module com.jwebmp.plugins.c3 {
 	exports com.jwebmp.plugins.c3;
 	exports com.jwebmp.plugins.c3.options;
@@ -17,9 +11,9 @@ module com.jwebmp.plugins.c3 {
 	requires java.validation;
 	requires com.jwebmp.guicedinjection;
 
-	provides IPageConfigurator with C3PageConfigurator;
-	provides IGuiceScanJarExclusions with C3ExclusionsModule;
-	provides IGuiceScanModuleExclusions with C3ExclusionsModule;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.c3.C3PageConfigurator;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.c3.implementations.C3ExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.c3.implementations.C3ExclusionsModule;
 
 	opens com.jwebmp.plugins.c3 to com.fasterxml.jackson.databind, com.jwebmp.core;
 	opens com.jwebmp.plugins.c3.options to com.fasterxml.jackson.databind, com.jwebmp.core;
