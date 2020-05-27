@@ -6,7 +6,6 @@ module com.jwebmp.plugins.c3 {
 
 	requires com.jwebmp.core;
 	requires com.guicedee.logmaster;
-	requires com.fasterxml.jackson.annotation;
 
 	requires java.validation;
 	requires com.guicedee.guicedinjection;
