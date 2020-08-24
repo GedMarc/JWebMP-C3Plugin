@@ -35,7 +35,7 @@ c3ext.generate = function (options) {
         refresh();
     }
 
-    var zoom2 = c3ext.ZoomBehavior({changed: onZoomChanged, bindto: options.bindto});
+    var zoom2 = c3ext.ZoomBehavior({ changed: onZoomChanged, bindto: options.bindto });
 
     zoom2.enhance = function () {
         _zoom2_maxItems *= 2;
@@ -49,10 +49,7 @@ c3ext.generate = function (options) {
         refresh();
     }
 
-    zoom2.maxItems = function () {
-        return _zoom2_maxItems;
-    };
-
+    zoom2.maxItems = function () { return _zoom2_maxItems; };
     function zoomAndReduceData(list, zoomRange, func, maxItems) {
         //var maxItems = 10;//Math.ceil(10 * zoomFactor);
         var list2 = list.slice(zoomRange[0], zoomRange[1]);
@@ -66,9 +63,7 @@ c3ext.generate = function (options) {
         return list3;
     }
 
-    function first(t) {
-        return t[0];
-    }
+    function first(t) { return t[0]; }
 
     var getDataForZoom = function (data) {
         if (data.columns == null || data.columns.length == 0)
@@ -76,7 +71,7 @@ c3ext.generate = function (options) {
 
         var zoomInfo = zoom2.getZoom();
         if (zoomInfo.totalItems != data.columns[0].length - 1) {
-            zoom2.setOptions({totalItems: data.columns[0].length - 1});
+            zoom2.setOptions({ totalItems: data.columns[0].length - 1 });
             zoomInfo = zoom2.getZoom();
         }
         data.columns = originalData.columns.map(function (column) {
@@ -108,9 +103,7 @@ c3ext.generate = function (options) {
     }
 
     function unload(names) {
-        originalData.columns.removeAll(function (t) {
-            names.contains(t);
-        });
+        originalData.columns.removeAll(function (t) { names.contains(t); });
     }
 
 
@@ -125,15 +118,14 @@ c3ext.generate = function (options) {
 }
 
 c3ext.ZoomBehavior = function (options) {
-    var zoom = {__type: "ZoomBehavior"};
+    var zoom = { __type: "ZoomBehavior" };
 
     var _zoom2_factor;
     var _left;
     var totalItems;
     var currentZoom;
     var bindto = options.bindto;
-    var _zoomChanged = options.changed || function () {
-    };
+    var _zoomChanged = options.changed || function () { };
     var element;
     var mousewheelTimer;
     var deltaY = 0;
@@ -183,11 +175,9 @@ c3ext.ZoomBehavior = function (options) {
         if (_zoomChanged != null)
             _zoomChanged(zoom.getZoom());
     }
-
     function applyZoomAndPan() {
         zoomAndPan(_zoom2_factor, _left);
     }
-
     function getItemsToShow() {
         var itemsToShow = Math.ceil(totalItems / _zoom2_factor);
         return itemsToShow;
@@ -195,7 +185,7 @@ c3ext.ZoomBehavior = function (options) {
 
 
     zoom.getZoom = function () {
-        return {totalItems: totalItems, currentZoom: currentZoom.slice()};
+        return { totalItems: totalItems, currentZoom: currentZoom.slice() };
     }
 
     zoom.factor = function (factor, skipDraw) {
@@ -218,7 +208,7 @@ c3ext.ZoomBehavior = function (options) {
         //_left += pageSize;
         if (_left + pageSize > totalItems)
             _left = totalItems - pageSize;
-        console.log({left: _left, pageSize: pageSize});
+        console.log({ left: _left, pageSize: pageSize });
         if (skipDraw)
             return;
         applyZoomAndPan();
@@ -268,7 +258,7 @@ c3ext.ZoomBehavior = function (options) {
             var multiply = (maxDelta + deltaY) / maxDelta;
             //var factor = chart.zoom2.factor()*multiply;
             //factor= Math.ceil(factor*100) / 100;
-            console.log({deltaY: deltaY, multiply: multiply});
+            console.log({ deltaY: deltaY, multiply: multiply });
             zoom.zoomAndPanByRatio(multiply, leftRatio);//0.5);//leftRatio);
             deltaY = 0;
         }
@@ -309,7 +299,7 @@ if (typeof (Q) == "undefined") {
         if (depth == 100) {
             console.warn("Q.copy is in depth of 100 - possible circular reference")
         }
-        options = options || {overwrite: false};
+        options = options || { overwrite: false };
         if (src == target || src == null)
             return target;
         if (typeof (src) != "object") {
@@ -378,7 +368,7 @@ if (typeof (Timer) == "undefined") {
         this.timeout = null;
     }
 }
-if (typeof(Array.prototype.splitIntoChunksOf) == "undefined") {
+if (typeof(Array.prototype.splitIntoChunksOf)=="undefined") {
     Array.prototype.splitIntoChunksOf = function (countInEachChunk) {
         var chunks = Math.ceil(this.length / countInEachChunk);
         var list = [];

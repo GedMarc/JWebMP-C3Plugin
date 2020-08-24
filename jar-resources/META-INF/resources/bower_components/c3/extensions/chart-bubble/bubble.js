@@ -1,4 +1,4 @@
-(function () {
+(function() {
     var extra = {};
 
     c3.chart.internal.fn.additionalConfig = {
@@ -50,9 +50,7 @@
                 ]);
             }
 
-            max = d3.max(Object.keys(values).map(function (key) {
-                return values[key];
-            }));
+            max = d3.max(Object.keys(values).map(function (key) { return values[key]; }));
             max_r = (base_length / (names.length * 2));
             max_area = max_r * max_r * Math.PI;
 
@@ -83,32 +81,22 @@
 
         // construct bubble chart data and setup config based on the values
 
-        var xs = this.config.data_pairs.map(function (pair) {
-                return pair.x;
-            }),
-            ys = this.config.data_pairs.map(function (pair) {
-                return pair.y;
-            });
+        var xs = this.config.data_pairs.map(function (pair) { return pair.x; }),
+            ys = this.config.data_pairs.map(function (pair) { return pair.y; });
 
         extra.names = d3.set(xs.concat(ys)).values().sort();
 
-        this.config.axis_y_tick_values = extra.names.map(function (name, i) {
-            return i;
-        });
+        this.config.axis_y_tick_values = extra.names.map(function (name, i) { return i; });
 
         var data_xs = {};
         extra.names.forEach(function (name) {
             data_xs[name] = name + '_x';
         });
         var data_columns_xs = Object.keys(data_xs).map(function (key) {
-            return [data_xs[key]].concat(extra.names.map(function (name, i) {
-                return i;
-            }));
+            return [data_xs[key]].concat(extra.names.map(function (name, i) { return i; }));
         });
         var data_columns_values = extra.names.map(function (name, i) {
-            return [name].concat(extra.names.map(function (name) {
-                return i;
-            }));
+            return [name].concat(extra.names.map(function (name) { return i; }));
         });
         this.config.data_xs = data_xs;
         this.config.data_columns = data_columns_xs.concat(data_columns_values);
