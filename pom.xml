@@ -21,7 +21,6 @@
         <dependency>
             <groupId>com.jwebmp.plugins.graphing</groupId>
             <artifactId>jwebmp-d3</artifactId>
-            <type>jar</type>
         </dependency>
     </dependencies>
     <scm>
