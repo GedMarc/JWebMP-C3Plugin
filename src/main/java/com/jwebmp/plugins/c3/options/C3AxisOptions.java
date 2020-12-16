@@ -23,7 +23,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * @since 09 Mar 2016
  */
 public class C3AxisOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<C3AxisOptions>
 {
 	/**
 	 * Constructs a new instance of the C3 Axis JS Options

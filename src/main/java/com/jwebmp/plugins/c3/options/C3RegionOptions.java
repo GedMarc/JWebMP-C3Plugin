@@ -23,7 +23,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * @since 09 Mar 2016
  */
 public class C3RegionOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<C3RegionOptions>
 {
 
 	public C3RegionOptions()

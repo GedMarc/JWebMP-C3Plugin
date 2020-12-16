@@ -36,7 +36,7 @@ import java.util.Map;
  * @since 09 Mar 2016
  */
 public class C3DataOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<C3DataOptions>
 {
 
 

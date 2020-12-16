@@ -25,7 +25,7 @@ import java.util.List;
  * @since 09 Mar 2016
  */
 public class C3ColourOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<C3ColourOptions>
 {
 
 

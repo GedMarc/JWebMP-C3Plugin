@@ -29,7 +29,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * @since Mar 9, 2016
  */
 public class C3SizeOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<C3SizeOptions>
 {
 
 

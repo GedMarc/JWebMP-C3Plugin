@@ -18,6 +18,7 @@ package com.jwebmp.plugins.c3;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -38,7 +39,12 @@ import jakarta.validation.constraints.NotNull;
 		pluginSourceUrl = "https://github.com/c3js/c3",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-C3Plugin/wiki",
 		pluginOriginalHomepage = "http://www.c3js.org/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/C3Plugin.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.graphing/jwebmp-c3",
+		pluginGroupId = "com.jwebmp.plugins.graphing",
+		pluginArtifactId = "jwebmp-c3",
+		pluginModuleName = "com.jwebmp.plugins.c3",
+		pluginStatus = PluginStatus.BaseCompleted
+)
 public class C3PageConfigurator
 		implements IPageConfigurator<C3PageConfigurator>
 {

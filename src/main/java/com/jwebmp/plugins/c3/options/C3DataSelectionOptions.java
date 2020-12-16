@@ -25,7 +25,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * @since 09 Mar 2016
  */
 public class C3DataSelectionOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<C3DataSelectionOptions>
 {
 
 

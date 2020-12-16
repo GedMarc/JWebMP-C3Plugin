@@ -18,6 +18,7 @@ package com.jwebmp.plugins.c3;
 
 import com.jwebmp.core.Component;
 import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.c3.options.*;
 import com.jwebmp.plugins.c3.options.data.C3DataOptions;
@@ -33,7 +34,7 @@ import com.jwebmp.plugins.c3.options.data.C3DataOptions;
  * @since Mar 9, 2016
  */
 public class C3Options
-		extends JavaScriptPart
+		extends JavaScriptPart<C3Options>
 {
 
 
@@ -63,7 +64,7 @@ public class C3Options
 	 *
 	 * @param bindTo
 	 */
-	public C3Options(ComponentHierarchyBase bindTo)
+	public C3Options(IComponentHierarchyBase<?,?> bindTo)
 	{
 
 	}

@@ -33,7 +33,7 @@ import java.util.Objects;
  * @author GedMarc
  * @since 09 Mar 2016
  */
-public class C3ColumnData<D extends JavaScriptPart>
+public class C3ColumnData<D extends JavaScriptPart<D>>
 		extends ArrayList<D>
 {
 
