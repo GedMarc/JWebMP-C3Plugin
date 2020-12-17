@@ -80,7 +80,7 @@ public class C3PageConfigurator
 
 	@NotNull
 	@Override
-	public Page configure(Page page)
+	 public Page<?> configure(Page<?> page)
 	{
 		return page;
 	}
