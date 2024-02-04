@@ -7,7 +7,7 @@ module com.jwebmp.plugins.c3 {
 	exports com.jwebmp.plugins.c3.series;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 
 	requires jakarta.validation;
 	requires com.guicedee.guicedinjection;
